@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import StandardScaler
-
+from waitress import serve
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests
@@ -85,6 +85,6 @@ def predict():
         return jsonify({"error": str(e)})
 
 
-# Run the app
-if __name__ == '__main__':
-    app.run(debug=True)
+
+if __name__ == "__main__":
+    serve(app, host="0.0.0.0", port=5000)
