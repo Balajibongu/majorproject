@@ -15,7 +15,6 @@ flatbuffers==25.2.10
 fonttools==4.56.0
 gast==0.6.0
 google-pasta==0.2.0
-grpcio==1.70.0
 gunicorn==23.0.0
 h5py==3.13.0
 idna==3.10
@@ -40,7 +39,6 @@ packaging==24.1
 pandas==1.5.3
 pefile==2023.2.7
 pillow==11.0.0
-protobuf==5.29.3
 PyGetWindow==0.0.9
 Pygments==2.19.1
 pyinstaller==6.11.0
